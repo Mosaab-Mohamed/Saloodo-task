@@ -1,0 +1,48 @@
+@import "./breakpoints";
+@import "./fonts";
+
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html {
+	font-size: 18px;
+	@include xl-screen {
+		font-size: 16;
+	}
+	@include lg-screen {
+		font-size: 14;
+	}
+	@include md-screen {
+		font-size: 12;
+	}
+	@include sm-screen {
+		font-size: 12px;
+	}
+}
+
+body {
+	margin: 0;
+	font-family: "Heebo", sans-serif;
+	background-color: #f5f5f5 !important;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #717171;
+	border-radius: 20px;
+}
+
+::-ms-reveal {
+	display: none;
+}

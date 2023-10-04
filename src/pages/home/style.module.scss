@@ -1,0 +1,25 @@
+@import "../../shared/styles/breakpoints";
+
+.header {
+	box-shadow: 1px 10px 14px 2px rgb(233 233 233);
+	background-color: rgb(255, 255, 255);
+}
+
+.userActive {
+	background-color: light-dark(
+		var(--mantine-color-white),
+		var(--mantine-color-dark-8)
+	);
+}
+
+.view_parcel {
+	:global {
+		.mantine-Text-root:first-child {
+			flex: 0.2;
+		}
+		.mantine-Text-root {
+			flex: 1;
+			overflow-wrap: anywhere;
+		}
+	}
+}

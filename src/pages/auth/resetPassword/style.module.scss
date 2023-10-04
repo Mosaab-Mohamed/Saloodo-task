@@ -1,0 +1,13 @@
+.resetPassword {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: rgb(243, 243, 243);
+	:global {
+		.mantine-Card-root {
+			min-width: 50%;
+			min-height: 50%;
+		}
+	}
+}
