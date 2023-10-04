@@ -4,7 +4,7 @@ import type { BikerParcelType, Parcel } from "@shared/types/parcel";
 import { auth, db } from "@shared/firebase";
 import { AppContext } from "./AppContext";
 
-export default function useFetchList(type: BikerParcelType) {
+export default function useFetchList(type?: BikerParcelType) {
 	const { currentUser } = auth;
 	const { userData } = useContext(AppContext);
 	const [list, setList] = useState<Parcel[]>([]);
